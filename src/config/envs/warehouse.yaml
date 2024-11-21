@@ -1,0 +1,4 @@
+env_args:
+  key: "WarehouseEnv-v0"  # Registered Gym ID
+  time_limit: 200         # Maximum episode length
+  map_name: "aaa"
