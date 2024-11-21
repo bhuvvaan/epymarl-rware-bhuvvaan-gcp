@@ -1,37 +1,36 @@
 # --- QMIX specific parameters ---
 
-# use epsilon greedy action selector
+# Epsilon-Greedy action selection
 action_selector: "epsilon_greedy"
 epsilon_start: 1.0
 epsilon_finish: 0.05
 epsilon_anneal_time: 50000
 evaluation_epsilon: 0.0
 
+# Runner and Episode Settings
 runner: "episode"
-
 buffer_size: 5000
+target_update_interval_or_tau: 200  # Target network update frequency
 
-# update the target network every {} episodes
-target_update_interval_or_tau: 200
-
-
+# Observations
 obs_agent_id: True
 obs_last_action: False
 obs_individual_obs: False
 
-
-# use the Q_Learner to train
+# Standardization of rewards
 standardise_returns: False
 standardise_rewards: True
 
+# Agent and Learner Settings
 agent_output_type: "q"
 learner: "q_learner"
 double_q: True
 mixer: "qmix"
 use_rnn: False
-mixing_embed_dim: 32
-hypernet_layers: 2
-hypernet_embed: 64
+mixing_embed_dim: 64  # Increased for better GPU workload
+hypernet_layers: 3    # Increased for better GPU workload
+hypernet_embed: 128   # Increased embedding size for GPU optimization
 
+# Device
 name: "qmix"
-device: 'cuda'
+device: "cuda"  # Ensure CUDA is used
