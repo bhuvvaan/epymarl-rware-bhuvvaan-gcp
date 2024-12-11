@@ -1,0 +1,418 @@
+[INFO 15:03:30] pymarl Running command 'my_main'
+[INFO 15:03:30] pymarl Started run with ID "10"
+[DEBUG 15:03:30] pymarl Starting Heartbeat
+[DEBUG 15:03:30] my_main Started
+[INFO 15:03:30] my_main Experiment Parameters:
+[INFO 15:03:30] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'common_reward': True,
+    'device': 'cuda',
+    'double_q': True,
+    'env': 'gymma',
+    'env_args': {   'key': 'marl:r-tiny-2ag-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 134549016,
+                    'time_limit': 500},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 50000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'render': False,
+    'repeat_id': 1,
+    'reward_scalarisation': 'sum',
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': True,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 134549016,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 2050000,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 50000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_rnn': False,
+    'use_tensorboard': False,
+    'use_wandb': False,
+    'wandb_mode': 'offline',
+    'wandb_project': None,
+    'wandb_save_model': False,
+    'wandb_team': None}
+
+[INFO 15:03:33] my_main Beginning training for 2050000 timesteps
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+[INFO 15:03:35] my_main t_env: 500 / 2050000
+[INFO 15:03:35] my_main Estimated time left: 1 minutes, 8 seconds. Time passed: 1 seconds
+[INFO 15:04:48] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/500
+[INFO 15:06:23] my_main Recent Stats | t_env:      50000 | Episode:      100
+ep_length_mean:          500.0000	epsilon:                   0.2400	grad_norm:                 1.1299	loss:                      0.9681
+q_taken_mean:              0.2184	return_mean:               0.2400	return_std:                0.3920	target_mean:               0.2315
+td_error_abs:              0.1629	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:06:25] my_main t_env: 50500 / 2050000
+[INFO 15:06:25] my_main Estimated time left: 1 hours, 53 minutes, 4 seconds. Time passed: 2 minutes, 51 seconds
+[INFO 15:07:38] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/50500
+[INFO 15:09:26] my_main Recent Stats | t_env:     100000 | Episode:      200
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 0.9873	loss:                      0.4804
+q_taken_mean:              0.2218	return_mean:               0.0200	return_std:                0.0600	target_mean:               0.2119
+td_error_abs:              0.1426	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:09:27] my_main t_env: 100500 / 2050000
+[INFO 15:09:27] my_main Estimated time left: 1 hours, 58 minutes, 40 seconds. Time passed: 5 minutes, 53 seconds
+[INFO 15:10:38] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/100500
+[INFO 15:12:20] my_main Recent Stats | t_env:     150000 | Episode:      300
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 4.3061	loss:                      0.4422
+q_taken_mean:              0.2463	return_mean:               0.0000	return_std:                0.0000	target_mean:               0.2647
+td_error_abs:              0.1865	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:12:21] my_main t_env: 150500 / 2050000
+[INFO 15:12:21] my_main Estimated time left: 1 hours, 50 minutes, 15 seconds. Time passed: 8 minutes, 48 seconds
+[INFO 15:13:32] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/150500
+[INFO 15:15:15] my_main Recent Stats | t_env:     200000 | Episode:      400
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 5.4826	loss:                      0.2531
+q_taken_mean:              0.2871	return_mean:               0.0300	return_std:                0.1036	target_mean:               0.3198
+td_error_abs:              0.1778	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:15:16] my_main t_env: 200500 / 2050000
+[INFO 15:15:16] my_main Estimated time left: 1 hours, 47 minutes, 40 seconds. Time passed: 11 minutes, 42 seconds
+[INFO 15:16:30] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/200500
+[INFO 15:18:12] my_main Recent Stats | t_env:     250000 | Episode:      500
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 5.0381	loss:                      0.2803
+q_taken_mean:              0.3617	return_mean:               0.0700	return_std:                0.2186	target_mean:               0.3825
+td_error_abs:              0.1906	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:18:13] my_main t_env: 250500 / 2050000
+[INFO 15:18:13] my_main Estimated time left: 1 hours, 46 minutes, 10 seconds. Time passed: 14 minutes, 39 seconds
+[INFO 15:19:24] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/250500
+[INFO 15:21:09] my_main Recent Stats | t_env:     300000 | Episode:      600
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 8.2208	loss:                      0.3392
+q_taken_mean:              0.4361	return_mean:               0.0200	return_std:                0.0872	target_mean:               0.4314
+td_error_abs:              0.1966	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:21:10] my_main t_env: 300500 / 2050000
+[INFO 15:21:10] my_main Estimated time left: 1 hours, 43 minutes, 6 seconds. Time passed: 17 minutes, 36 seconds
+[INFO 15:22:23] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/300500
+[INFO 15:24:08] my_main Recent Stats | t_env:     350000 | Episode:      700
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 6.1424	loss:                      0.3004
+q_taken_mean:              0.5073	return_mean:               0.0700	return_std:                0.2508	target_mean:               0.5000
+td_error_abs:              0.1935	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:24:09] my_main t_env: 350500 / 2050000
+[INFO 15:24:09] my_main Estimated time left: 1 hours, 41 minutes, 23 seconds. Time passed: 20 minutes, 35 seconds
+[INFO 15:25:22] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/350500
+[INFO 15:27:06] my_main Recent Stats | t_env:     400000 | Episode:      800
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 7.4500	loss:                      0.3748
+q_taken_mean:              0.4874	return_mean:               0.0900	return_std:                0.2386	target_mean:               0.4681
+td_error_abs:              0.2022	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 15:27:07] my_main t_env: 400500 / 2050000
+[INFO 15:27:07] my_main Estimated time left: 1 hours, 37 minutes, 57 seconds. Time passed: 23 minutes, 33 seconds
+[INFO 15:28:20] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/400500
+[INFO 15:30:07] my_main Recent Stats | t_env:     450000 | Episode:      900
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                40.8297	loss:                      1.4852
+q_taken_mean:              0.5078	return_mean:               0.0400	return_std:                0.1472	target_mean:               0.5891
+td_error_abs:              0.2951	test_ep_length_mean:     500.0000	test_return_mean:          0.0020	test_return_std:           0.0199
+
+[INFO 15:30:08] my_main t_env: 450500 / 2050000
+[INFO 15:30:08] my_main Estimated time left: 1 hours, 36 minutes, 32 seconds. Time passed: 26 minutes, 34 seconds
+[INFO 15:31:20] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/450500
+[INFO 15:33:04] my_main Recent Stats | t_env:     500000 | Episode:     1000
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                21.5809	loss:                      0.4913
+q_taken_mean:              0.5803	return_mean:               0.0400	return_std:                0.1744	target_mean:               0.5570
+td_error_abs:              0.2182	test_ep_length_mean:     500.0000	test_return_mean:          0.0020	test_return_std:           0.0199
+
+[INFO 15:33:05] my_main t_env: 500500 / 2050000
+[INFO 15:33:05] my_main Estimated time left: 1 hours, 31 minutes, 30 seconds. Time passed: 29 minutes, 31 seconds
+[INFO 15:34:17] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/500500
+[INFO 15:36:02] my_main Recent Stats | t_env:     550000 | Episode:     1100
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                18.3626	loss:                      0.7447
+q_taken_mean:              0.6278	return_mean:               0.0900	return_std:                0.3026	target_mean:               0.6276
+td_error_abs:              0.2717	test_ep_length_mean:     500.0000	test_return_mean:          0.0020	test_return_std:           0.0199
+
+[INFO 15:36:03] my_main t_env: 550500 / 2050000
+[INFO 15:36:03] my_main Estimated time left: 1 hours, 28 minutes, 47 seconds. Time passed: 32 minutes, 29 seconds
+[INFO 15:37:17] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/550500
+[INFO 15:39:02] my_main Recent Stats | t_env:     600000 | Episode:     1200
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 7.0572	loss:                      0.4247
+q_taken_mean:              0.5036	return_mean:               0.0500	return_std:                0.1636	target_mean:               0.5423
+td_error_abs:              0.2190	test_ep_length_mean:     500.0000	test_return_mean:          0.0020	test_return_std:           0.0199
+
+[INFO 15:39:03] my_main t_env: 600500 / 2050000
+[INFO 15:39:03] my_main Estimated time left: 1 hours, 27 minutes, 4 seconds. Time passed: 35 minutes, 29 seconds
+[INFO 15:40:15] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/600500
+[INFO 15:42:00] my_main Recent Stats | t_env:     650000 | Episode:     1300
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                37.6011	loss:                      0.9649
+q_taken_mean:              0.5460	return_mean:               0.1000	return_std:                0.2628	target_mean:               0.6043
+td_error_abs:              0.2513	test_ep_length_mean:     500.0000	test_return_mean:          0.0020	test_return_std:           0.0199
+
+[INFO 15:42:01] my_main t_env: 650500 / 2050000
+[INFO 15:42:01] my_main Estimated time left: 1 hours, 22 minutes, 55 seconds. Time passed: 38 minutes, 27 seconds
+[INFO 15:43:15] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/650500
+[INFO 15:45:08] my_main Recent Stats | t_env:     700000 | Episode:     1400
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 9.7211	loss:                      0.5631
+q_taken_mean:              0.5484	return_mean:               0.0700	return_std:                0.2104	target_mean:               0.5561
+td_error_abs:              0.2124	test_ep_length_mean:     500.0000	test_return_mean:          0.0040	test_return_std:           0.0280
+
+[INFO 15:45:10] my_main t_env: 700500 / 2050000
+[INFO 15:45:10] my_main Estimated time left: 1 hours, 24 minutes, 53 seconds. Time passed: 41 minutes, 36 seconds
+[INFO 15:46:25] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/700500
+[INFO 15:48:13] my_main Recent Stats | t_env:     750000 | Episode:     1500
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                30.3740	loss:                      0.7564
+q_taken_mean:              0.7924	return_mean:               0.0600	return_std:                0.1672	target_mean:               0.7955
+td_error_abs:              0.2583	test_ep_length_mean:     500.0000	test_return_mean:          0.0060	test_return_std:           0.0479
+
+[INFO 15:48:14] my_main t_env: 750500 / 2050000
+[INFO 15:48:14] my_main Estimated time left: 1 hours, 19 minutes, 44 seconds. Time passed: 44 minutes, 40 seconds
+[INFO 15:49:26] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/750500
+[INFO 15:51:10] my_main Recent Stats | t_env:     800000 | Episode:     1600
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                16.3945	loss:                      0.5339
+q_taken_mean:              0.6516	return_mean:               0.1500	return_std:                0.3924	target_mean:               0.6909
+td_error_abs:              0.2434	test_ep_length_mean:     500.0000	test_return_mean:          0.0160	test_return_std:           0.0999
+
+[INFO 15:51:11] my_main t_env: 800500 / 2050000
+[INFO 15:51:11] my_main Estimated time left: 1 hours, 13 minutes, 54 seconds. Time passed: 47 minutes, 37 seconds
+[INFO 15:52:23] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/800500
+[INFO 15:54:07] my_main Recent Stats | t_env:     850000 | Episode:     1700
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                48.1918	loss:                      0.7245
+q_taken_mean:              0.6528	return_mean:               0.1600	return_std:                0.4111	target_mean:               0.7120
+td_error_abs:              0.2835	test_ep_length_mean:     500.0000	test_return_mean:          0.0340	test_return_std:           0.1571
+
+[INFO 15:54:08] my_main t_env: 850500 / 2050000
+[INFO 15:54:08] my_main Estimated time left: 1 hours, 10 minutes, 38 seconds. Time passed: 50 minutes, 34 seconds
+[INFO 15:55:19] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/850500
+[INFO 15:57:03] my_main Recent Stats | t_env:     900000 | Episode:     1800
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 9.4286	loss:                      0.4995
+q_taken_mean:              0.6956	return_mean:               0.3100	return_std:                0.5618	target_mean:               0.6692
+td_error_abs:              0.2322	test_ep_length_mean:     500.0000	test_return_mean:          0.0500	test_return_std:           0.2114
+
+[INFO 15:57:04] my_main t_env: 900500 / 2050000
+[INFO 15:57:04] my_main Estimated time left: 1 hours, 7 minutes, 41 seconds. Time passed: 53 minutes, 31 seconds
+[INFO 15:58:17] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/900500
+[INFO 16:00:03] my_main Recent Stats | t_env:     950000 | Episode:     1900
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                56.9621	loss:                      1.3721
+q_taken_mean:              0.9038	return_mean:               0.3000	return_std:                0.5292	target_mean:               0.9305
+td_error_abs:              0.3799	test_ep_length_mean:     500.0000	test_return_mean:          0.0580	test_return_std:           0.2309
+
+[INFO 16:00:04] my_main t_env: 950500 / 2050000
+[INFO 16:00:04] my_main Estimated time left: 1 hours, 5 minutes, 42 seconds. Time passed: 56 minutes, 30 seconds
+[INFO 16:01:16] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/950500
+[INFO 16:03:00] my_main Recent Stats | t_env:    1000000 | Episode:     2000
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                58.8537	loss:                      0.9443
+q_taken_mean:              0.8544	return_mean:               0.2700	return_std:                0.4660	target_mean:               0.8874
+td_error_abs:              0.3065	test_ep_length_mean:     500.0000	test_return_mean:          0.0740	test_return_std:           0.2863
+
+[INFO 16:03:01] my_main t_env: 1000500 / 2050000
+[INFO 16:03:01] my_main Estimated time left: 1 hours, 1 minutes, 59 seconds. Time passed: 59 minutes, 27 seconds
+[INFO 16:04:14] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1000500
+[INFO 16:05:58] my_main Recent Stats | t_env:    1050000 | Episode:     2100
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                42.0548	loss:                      1.4834
+q_taken_mean:              1.1279	return_mean:               0.3100	return_std:                0.4769	target_mean:               1.1619
+td_error_abs:              0.3800	test_ep_length_mean:     500.0000	test_return_mean:          0.1020	test_return_std:           0.3177
+
+[INFO 16:05:59] my_main t_env: 1050500 / 2050000
+[INFO 16:05:59] my_main Estimated time left: 59 minutes, 11 seconds. Time passed: 1 hours, 2 minutes, 25 seconds
+[INFO 16:07:11] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1050500
+[INFO 16:09:00] my_main Recent Stats | t_env:    1100000 | Episode:     2200
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                55.8781	loss:                      1.6330
+q_taken_mean:              1.2783	return_mean:               0.3200	return_std:                0.4908	target_mean:               1.3047
+td_error_abs:              0.4055	test_ep_length_mean:     500.0000	test_return_mean:          0.1040	test_return_std:           0.3268
+
+[INFO 16:09:01] my_main t_env: 1100500 / 2050000
+[INFO 16:09:01] my_main Estimated time left: 57 minutes, 42 seconds. Time passed: 1 hours, 5 minutes, 27 seconds
+[INFO 16:10:17] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1100500
+[INFO 16:12:03] my_main Recent Stats | t_env:    1150000 | Episode:     2300
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                56.4298	loss:                      1.9336
+q_taken_mean:              1.4530	return_mean:               0.2700	return_std:                0.4387	target_mean:               1.4991
+td_error_abs:              0.4713	test_ep_length_mean:     500.0000	test_return_mean:          0.1020	test_return_std:           0.3236
+
+[INFO 16:12:04] my_main t_env: 1150500 / 2050000
+[INFO 16:12:04] my_main Estimated time left: 54 minutes, 48 seconds. Time passed: 1 hours, 8 minutes, 30 seconds
+[INFO 16:13:17] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1150500
+[INFO 16:15:02] my_main Recent Stats | t_env:    1200000 | Episode:     2400
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                82.2976	loss:                      2.5389
+q_taken_mean:              1.6185	return_mean:               0.2700	return_std:                0.5092	target_mean:               1.5531
+td_error_abs:              0.5265	test_ep_length_mean:     500.0000	test_return_mean:          0.0960	test_return_std:           0.3102
+
+[INFO 16:15:03] my_main t_env: 1200500 / 2050000
+[INFO 16:15:03] my_main Estimated time left: 50 minutes, 51 seconds. Time passed: 1 hours, 11 minutes, 30 seconds
+[INFO 16:16:16] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1200500
+[INFO 16:18:00] my_main Recent Stats | t_env:    1250000 | Episode:     2500
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               106.2876	loss:                      2.0588
+q_taken_mean:              1.5667	return_mean:               0.3000	return_std:                0.4564	target_mean:               1.5667
+td_error_abs:              0.4212	test_ep_length_mean:     500.0000	test_return_mean:          0.0940	test_return_std:           0.2891
+
+[INFO 16:18:01] my_main t_env: 1250500 / 2050000
+[INFO 16:18:01] my_main Estimated time left: 47 minutes, 24 seconds. Time passed: 1 hours, 14 minutes, 27 seconds
+[INFO 16:19:16] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1250500
+[INFO 16:20:58] my_main Recent Stats | t_env:    1300000 | Episode:     2600
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                74.0188	loss:                      2.1427
+q_taken_mean:              1.7340	return_mean:               0.2300	return_std:                0.4360	target_mean:               1.7544
+td_error_abs:              0.5131	test_ep_length_mean:     500.0000	test_return_mean:          0.0600	test_return_std:           0.2337
+
+[INFO 16:20:59] my_main t_env: 1300500 / 2050000
+[INFO 16:20:59] my_main Estimated time left: 44 minutes, 28 seconds. Time passed: 1 hours, 17 minutes, 25 seconds
+[INFO 16:22:12] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1300500
+[INFO 16:23:56] my_main Recent Stats | t_env:    1350000 | Episode:     2700
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               141.3152	loss:                      4.2709
+q_taken_mean:              2.0427	return_mean:               0.2500	return_std:                0.4336	target_mean:               2.0551
+td_error_abs:              0.6384	test_ep_length_mean:     500.0000	test_return_mean:          0.0500	test_return_std:           0.2110
+
+[INFO 16:23:57] my_main t_env: 1350500 / 2050000
+[INFO 16:23:57] my_main Estimated time left: 41 minutes, 25 seconds. Time passed: 1 hours, 20 minutes, 23 seconds
+[INFO 16:25:10] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1350500
+[INFO 16:26:53] my_main Recent Stats | t_env:    1400000 | Episode:     2800
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               104.8424	loss:                      4.4917
+q_taken_mean:              2.6369	return_mean:               0.2500	return_std:                0.4169	target_mean:               2.6253
+td_error_abs:              0.6541	test_ep_length_mean:     500.0000	test_return_mean:          0.0620	test_return_std:           0.2272
+
+[INFO 16:26:54] my_main t_env: 1400500 / 2050000
+[INFO 16:26:54] my_main Estimated time left: 38 minutes, 25 seconds. Time passed: 1 hours, 23 minutes, 21 seconds
+[INFO 16:28:10] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1400500
+[INFO 16:29:54] my_main Recent Stats | t_env:    1450000 | Episode:     2900
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               218.4753	loss:                      5.5977
+q_taken_mean:              2.7612	return_mean:               0.2000	return_std:                0.3845	target_mean:               2.8340
+td_error_abs:              0.7954	test_ep_length_mean:     500.0000	test_return_mean:          0.0600	test_return_std:           0.2211
+
+[INFO 16:29:56] my_main t_env: 1450500 / 2050000
+[INFO 16:29:56] my_main Estimated time left: 36 minutes, 11 seconds. Time passed: 1 hours, 26 minutes, 22 seconds
+[INFO 16:31:09] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1450500
+[INFO 16:32:52] my_main Recent Stats | t_env:    1500000 | Episode:     3000
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               349.9323	loss:                      5.9776
+q_taken_mean:              3.1903	return_mean:               0.2500	return_std:                0.4476	target_mean:               3.1211
+td_error_abs:              0.8020	test_ep_length_mean:     500.0000	test_return_mean:          0.0440	test_return_std:           0.1668
+
+[INFO 16:32:53] my_main t_env: 1500500 / 2050000
+[INFO 16:32:53] my_main Estimated time left: 32 minutes, 30 seconds. Time passed: 1 hours, 29 minutes, 19 seconds
+[INFO 16:34:04] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1500500
+[INFO 16:35:50] my_main Recent Stats | t_env:    1550000 | Episode:     3100
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               153.5743	loss:                      4.0825
+q_taken_mean:              3.0851	return_mean:               0.1000	return_std:                0.2550	target_mean:               3.0040
+td_error_abs:              0.6269	test_ep_length_mean:     500.0000	test_return_mean:          0.0420	test_return_std:           0.1587
+
+[INFO 16:35:51] my_main t_env: 1550500 / 2050000
+[INFO 16:35:51] my_main Estimated time left: 29 minutes, 35 seconds. Time passed: 1 hours, 32 minutes, 17 seconds
+[INFO 16:37:01] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1550500
+[INFO 16:38:43] my_main Recent Stats | t_env:    1600000 | Episode:     3200
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               254.3237	loss:                      7.4572
+q_taken_mean:              3.6320	return_mean:               0.1600	return_std:                0.3580	target_mean:               3.6784
+td_error_abs:              0.8318	test_ep_length_mean:     500.0000	test_return_mean:          0.0320	test_return_std:           0.1152
+
+[INFO 16:38:44] my_main t_env: 1600500 / 2050000
+[INFO 16:38:44] my_main Estimated time left: 25 minutes, 59 seconds. Time passed: 1 hours, 35 minutes, 10 seconds
+[INFO 16:39:55] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1600500
+[INFO 16:41:39] my_main Recent Stats | t_env:    1650000 | Episode:     3300
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               142.8730	loss:                      5.3794
+q_taken_mean:              3.4780	return_mean:               0.2400	return_std:                0.4523	target_mean:               3.6233
+td_error_abs:              0.7658	test_ep_length_mean:     500.0000	test_return_mean:          0.0060	test_return_std:           0.0479
+
+[INFO 16:41:40] my_main t_env: 1650500 / 2050000
+[INFO 16:41:40] my_main Estimated time left: 23 minutes, 24 seconds. Time passed: 1 hours, 38 minutes, 6 seconds
+[INFO 16:42:53] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1650500
+[INFO 16:44:38] my_main Recent Stats | t_env:    1700000 | Episode:     3400
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               312.6448	loss:                      6.4007
+q_taken_mean:              4.5061	return_mean:               0.1100	return_std:                0.2742	target_mean:               4.4179
+td_error_abs:              0.9312	test_ep_length_mean:     500.0000	test_return_mean:          0.0080	test_return_std:           0.0540
+
+[INFO 16:44:39] my_main t_env: 1700500 / 2050000
+[INFO 16:44:39] my_main Estimated time left: 20 minutes, 50 seconds. Time passed: 1 hours, 41 minutes, 5 seconds
+[INFO 16:45:52] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1700500
+[INFO 16:47:37] my_main Recent Stats | t_env:    1750000 | Episode:     3500
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               205.0189	loss:                      7.9128
+q_taken_mean:              4.2758	return_mean:               0.2100	return_std:                0.3982	target_mean:               4.3827
+td_error_abs:              0.8424	test_ep_length_mean:     500.0000	test_return_mean:          0.0080	test_return_std:           0.0540
+
+[INFO 16:47:38] my_main t_env: 1750500 / 2050000
+[INFO 16:47:38] my_main Estimated time left: 17 minutes, 51 seconds. Time passed: 1 hours, 44 minutes, 4 seconds
+[INFO 16:48:50] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1750500
+[INFO 16:50:33] my_main Recent Stats | t_env:    1800000 | Episode:     3600
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               134.5014	loss:                      6.4768
+q_taken_mean:              5.3546	return_mean:               0.2200	return_std:                0.4077	target_mean:               5.3408
+td_error_abs:              0.7801	test_ep_length_mean:     500.0000	test_return_mean:          0.0100	test_return_std:           0.0621
+
+[INFO 16:50:35] my_main t_env: 1800500 / 2050000
+[INFO 16:50:35] my_main Estimated time left: 14 minutes, 42 seconds. Time passed: 1 hours, 47 minutes, 1 seconds
+[INFO 16:52:14] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1800500
+[INFO 16:54:01] my_main Recent Stats | t_env:    1850000 | Episode:     3700
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               323.8263	loss:                      7.3622
+q_taken_mean:              5.8888	return_mean:               0.1800	return_std:                0.3914	target_mean:               5.8468
+td_error_abs:              0.8822	test_ep_length_mean:     500.0000	test_return_mean:          0.0140	test_return_std:           0.0901
+
+[INFO 16:54:02] my_main t_env: 1850500 / 2050000
+[INFO 16:54:02] my_main Estimated time left: 13 minutes, 47 seconds. Time passed: 1 hours, 50 minutes, 28 seconds
+[INFO 16:55:16] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1850500
+[INFO 16:57:03] my_main Recent Stats | t_env:    1900000 | Episode:     3800
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               128.5509	loss:                      5.5862
+q_taken_mean:              5.1510	return_mean:               0.1300	return_std:                0.3314	target_mean:               5.1462
+td_error_abs:              0.7648	test_ep_length_mean:     500.0000	test_return_mean:          0.0140	test_return_std:           0.0901
+
+[INFO 16:57:04] my_main t_env: 1900500 / 2050000
+[INFO 16:57:04] my_main Estimated time left: 9 minutes, 4 seconds. Time passed: 1 hours, 53 minutes, 30 seconds
+[INFO 16:58:15] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1900500
+[INFO 16:59:57] my_main Recent Stats | t_env:    1950000 | Episode:     3900
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               264.8936	loss:                      7.4913
+q_taken_mean:              5.7663	return_mean:               0.1900	return_std:                0.4136	target_mean:               5.8302
+td_error_abs:              0.9225	test_ep_length_mean:     500.0000	test_return_mean:          0.0080	test_return_std:           0.0560
+
+[INFO 16:59:58] my_main t_env: 1950500 / 2050000
+[INFO 16:59:58] my_main Estimated time left: 5 minutes, 46 seconds. Time passed: 1 hours, 56 minutes, 24 seconds
+[INFO 17:01:09] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/1950500
+[INFO 17:02:53] my_main Recent Stats | t_env:    2000000 | Episode:     4000
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               446.2733	loss:                      7.5198
+q_taken_mean:              6.1237	return_mean:               0.2400	return_std:                0.4595	target_mean:               6.0353
+td_error_abs:              0.8908	test_ep_length_mean:     500.0000	test_return_mean:          0.0080	test_return_std:           0.0560
+
+[INFO 17:02:54] my_main t_env: 2000500 / 2050000
+[INFO 17:02:54] my_main Estimated time left: 2 minutes, 53 seconds. Time passed: 1 hours, 59 minutes, 20 seconds
+[INFO 17:04:07] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/2000500
+[INFO 17:05:52] my_main Recent Stats | t_env:    2050000 | Episode:     4100
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:               339.8699	loss:                      6.8570
+q_taken_mean:              6.3016	return_mean:               0.2600	return_std:                0.4669	target_mean:               6.3821
+td_error_abs:              0.9671	test_ep_length_mean:     500.0000	test_return_mean:          0.0060	test_return_std:           0.0479
+
+[INFO 17:05:53] my_main t_env: 2050500 / 2050000
+[INFO 17:05:53] my_main Estimated time left: -. Time passed: 2 hours, 2 minutes, 19 seconds
+[INFO 17:07:07] my_main Saving models to results/models/qmix_seed134549016_marl:r-tiny-2ag-v2_2024-12-06 15:03:30.784464/2050500
+[INFO 17:07:07] my_main Finished Training
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 17:07:08] my_main Finished after 2:03:38.
+[INFO 17:07:08] pymarl Completed after 2:03:38
