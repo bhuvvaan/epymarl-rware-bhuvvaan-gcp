@@ -1,6 +1,6 @@
 # Using EpyMARL for RWARE
 
-To register a custom RWARE environment, go to MARL file and give the layout of the custom environment. To register the environment just run marl.py file.
+To register a custom RWARE environment, go to epymarl-rware/src/marl.py file and give the layout of the custom environment. To register the environment just run marl.py file.
 
 To train a RL algorithm on the environment use the command.
 
