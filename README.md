@@ -8,10 +8,10 @@ To train a RL algorithm on the environment use the command.
 python src/main.py --config=qmix --env-config=gymma with env_args.time_limit=500 env_args.key="marl:your-env-name" save_model=True
 ```
 
-If common reward is sufficient, ```common_reward=True```.
+If common reward is insufficient and individual rewards are needed, ```common_reward=False```.
 
 ```shell
-python src/main.py --config=qmix --env-config=gymma with env_args.time_limit=500 env_args.key="marl:your-env-name" save_model=True common_reward=True
+python src/main.py --config=qmix --env-config=gymma with env_args.time_limit=500 env_args.key="marl:your-env-name" save_model=True common_reward=False
 ```
 
 
