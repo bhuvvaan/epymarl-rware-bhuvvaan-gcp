@@ -21,5 +21,11 @@ To visualize results, run from the root folder, after selecting the required met
  python3 plot_results.py --path ./results/sacred/qmix/your-env-name --metric test_return_mean --save_dir ./plots
 ```
 
+To render results, run from the root folder, after selecting the required model.
+
+```shell
+ python src/main.py --config=qmix --env-config=gymma with env_args.time_limit=25 env_args.key="marl:r-tiny-2ag-v2" checkpoint_path="./results/models/your-model-folder" evaluate=True render=True
+```
+
 For readme of EpyMARL, visit [https://github.com/uoe-agents/epymarl/blob/main/README.md](url)
  
