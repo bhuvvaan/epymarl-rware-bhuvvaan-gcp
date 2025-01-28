@@ -1,0 +1,82 @@
+[INFO 16:01:37] pymarl Running command 'my_main'
+[INFO 16:01:37] pymarl Started run with ID "21"
+[DEBUG 16:01:37] pymarl Starting Heartbeat
+[DEBUG 16:01:37] my_main Started
+[INFO 16:01:37] my_main Experiment Parameters:
+[INFO 16:01:37] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'common_reward': True,
+    'device': 'cuda',
+    'double_q': True,
+    'env': 'gymma',
+    'env_args': {   'key': 'marl:r-tiny-2ag-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 605949332,
+                    'time_limit': 1000},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 50000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'render': False,
+    'repeat_id': 1,
+    'reward_scalarisation': 'sum',
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': True,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 605949332,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 1000000,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 20,
+    'use_cuda': True,
+    'use_rnn': False,
+    'use_tensorboard': False,
+    'use_wandb': False,
+    'wandb_mode': 'offline',
+    'wandb_project': None,
+    'wandb_save_model': False,
+    'wandb_team': None}
+
+[INFO 16:01:40] my_main Beginning training for 1000000 timesteps
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+[INFO 16:01:41] my_main t_env: 500 / 1000000
+[INFO 16:01:41] my_main Estimated time left: 1 minutes, 51 seconds. Time passed: 1 seconds
+[INFO 16:01:55] my_main Saving models to results/models/qmix_seed605949332_marl:r-tiny-2ag-v2_2025-01-24 16:01:37.231833/500

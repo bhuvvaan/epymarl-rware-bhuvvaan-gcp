@@ -1038,19 +1038,6 @@ class Warehouse(gym.Env):
         return self.global_image
 
 
-if __name__ == "__main__":
-    env = Warehouse(9, 8, 3, 10, 3, 1, 5, None, None, RewardType.GLOBAL)
-    env.reset()
-    from tqdm import tqdm
-
-    env.render()
-
-    # for _ in tqdm(range(1000000)):
-    #     time.sleep(0.05)
-    #     env.render()
-    #     actions = env.action_space.sample()
-    #     env.step(actions)
-
 import itertools
 
 from gymnasium import register
@@ -1072,13 +1059,13 @@ _perms = itertools.product(
     range(1, 20),
 )
 
-for size, diff, agents in [("tiny","",2)]:
+for size, diff, agents in [("tiny","",4)]:
     # normal tasks
     register(
-        id=f"r-{size}-{agents}ag{diff}-v2",
+        id=f"rware-{size}-{agents}ag{diff}-v2",
         entry_point="marl:Warehouse",
         kwargs={
-            "column_height": 8,
+            "column_height": 7,
             "shelf_rows": _sizes[size][0],
             "shelf_columns": _sizes[size][1],
             "n_agents": agents,
@@ -1087,14 +1074,20 @@ for size, diff, agents in [("tiny","",2)]:
             "request_queue_size": int(agents * _difficulty[diff]),
             "max_inactivity_steps": None,
             "max_steps": 500,
-            "reward_type": RewardType.INDIVIDUAL,
-            "layout" : """
-.......
-...x...
-..x.x..
-.x...x.
-..x.x..
-...x...
-.g...g.
-"""
+            "reward_type": RewardType.INDIVIDUAL
+
         })
+    
+if __name__ == "__main__":
+    env = gym.make("rware-tiny-4ag-v2", render_mode="human")
+    print(env.observation_space)
+    env.reset()
+    from tqdm import tqdm
+
+    env.render()
+
+    for _ in tqdm(range(1000000)):
+        time.sleep(0.05)
+        env.render()
+        actions = env.action_space.sample()
+        env.step(actions)

@@ -1,0 +1,154 @@
+[INFO 12:09:20] pymarl Running command 'my_main'
+[INFO 12:09:20] pymarl Started run with ID "13"
+[DEBUG 12:09:20] pymarl Starting Heartbeat
+[DEBUG 12:09:20] my_main Started
+[INFO 12:09:20] my_main Experiment Parameters:
+[INFO 12:09:20] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'common_reward': True,
+    'device': 'cuda',
+    'double_q': True,
+    'env': 'gymma',
+    'env_args': {   'key': 'marl:r-tiny-2ag-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 416273057,
+                    'time_limit': 500},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 50000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'qmix',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'render': False,
+    'repeat_id': 1,
+    'reward_scalarisation': 'sum',
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': True,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 416273057,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 200000,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 20,
+    'use_cuda': True,
+    'use_rnn': False,
+    'use_tensorboard': False,
+    'use_wandb': False,
+    'wandb_mode': 'offline',
+    'wandb_project': None,
+    'wandb_save_model': False,
+    'wandb_team': None}
+
+[INFO 12:09:21] my_main Beginning training for 200000 timesteps
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+[INFO 12:09:23] my_main t_env: 500 / 200000
+[INFO 12:09:23] my_main Estimated time left: 24 seconds. Time passed: 1 seconds
+[INFO 12:09:38] my_main Saving models to results/models/qmix_seed416273057_marl:r-tiny-2ag-v2_2025-01-24 12:09:20.222969/500
+[INFO 12:09:53] my_main t_env: 10500 / 200000
+[INFO 12:09:53] my_main Estimated time left: 9 minutes, 33 seconds. Time passed: 31 seconds
+[INFO 12:10:27] my_main t_env: 20500 / 200000
+[INFO 12:10:27] my_main Estimated time left: 10 minutes, 9 seconds. Time passed: 1 minutes, 5 seconds
+[INFO 12:11:04] my_main t_env: 30500 / 200000
+[INFO 12:11:04] my_main Estimated time left: 10 minutes, 28 seconds. Time passed: 1 minutes, 42 seconds
+[INFO 12:11:41] my_main t_env: 40500 / 200000
+[INFO 12:11:41] my_main Estimated time left: 9 minutes, 48 seconds. Time passed: 2 minutes, 19 seconds
+[INFO 12:12:17] my_main Recent Stats | t_env:      50000 | Episode:      100
+ep_length_mean:          500.0000	epsilon:                   0.2400	grad_norm:                 1.3481	loss:                      0.7593
+q_taken_mean:              0.1839	return_mean:               0.3000	return_std:                0.4304	target_mean:               0.2049
+td_error_abs:              0.1585	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 12:12:18] my_main t_env: 50500 / 200000
+[INFO 12:12:18] my_main Estimated time left: 9 minutes, 10 seconds. Time passed: 2 minutes, 56 seconds
+[INFO 12:12:33] my_main Saving models to results/models/qmix_seed416273057_marl:r-tiny-2ag-v2_2025-01-24 12:09:20.222969/50500
+[INFO 12:12:54] my_main t_env: 60500 / 200000
+[INFO 12:12:54] my_main Estimated time left: 8 minutes, 29 seconds. Time passed: 3 minutes, 32 seconds
+[INFO 12:13:31] my_main t_env: 70500 / 200000
+[INFO 12:13:31] my_main Estimated time left: 8 minutes, 1 seconds. Time passed: 4 minutes, 10 seconds
+[INFO 12:14:09] my_main t_env: 80500 / 200000
+[INFO 12:14:09] my_main Estimated time left: 7 minutes, 23 seconds. Time passed: 4 minutes, 47 seconds
+[INFO 12:14:46] my_main t_env: 90500 / 200000
+[INFO 12:14:46] my_main Estimated time left: 6 minutes, 50 seconds. Time passed: 5 minutes, 24 seconds
+[INFO 12:15:23] my_main Recent Stats | t_env:     100000 | Episode:      200
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 1.2579	loss:                      0.6445
+q_taken_mean:              0.1791	return_mean:               0.0000	return_std:                0.0000	target_mean:               0.1831
+td_error_abs:              0.1554	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 12:15:24] my_main t_env: 100500 / 200000
+[INFO 12:15:24] my_main Estimated time left: 6 minutes, 20 seconds. Time passed: 6 minutes, 2 seconds
+[INFO 12:15:40] my_main Saving models to results/models/qmix_seed416273057_marl:r-tiny-2ag-v2_2025-01-24 12:09:20.222969/100500
+[INFO 12:16:01] my_main t_env: 110500 / 200000
+[INFO 12:16:01] my_main Estimated time left: 5 minutes, 32 seconds. Time passed: 6 minutes, 39 seconds
+[INFO 12:16:39] my_main t_env: 120500 / 200000
+[INFO 12:16:39] my_main Estimated time left: 4 minutes, 57 seconds. Time passed: 7 minutes, 17 seconds
+[INFO 12:17:16] my_main t_env: 130500 / 200000
+[INFO 12:17:16] my_main Estimated time left: 4 minutes, 17 seconds. Time passed: 7 minutes, 54 seconds
+[INFO 12:17:53] my_main t_env: 140500 / 200000
+[INFO 12:17:53] my_main Estimated time left: 3 minutes, 39 seconds. Time passed: 8 minutes, 31 seconds
+[INFO 12:18:28] my_main Recent Stats | t_env:     150000 | Episode:      300
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 8.0066	loss:                      0.5524
+q_taken_mean:              0.2008	return_mean:               0.0000	return_std:                0.0000	target_mean:               0.2258
+td_error_abs:              0.2324	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 12:18:29] my_main t_env: 150500 / 200000
+[INFO 12:18:29] my_main Estimated time left: 3 minutes, 1 seconds. Time passed: 9 minutes, 7 seconds
+[INFO 12:18:44] my_main Saving models to results/models/qmix_seed416273057_marl:r-tiny-2ag-v2_2025-01-24 12:09:20.222969/150500
+[INFO 12:19:06] my_main t_env: 160500 / 200000
+[INFO 12:19:06] my_main Estimated time left: 2 minutes, 23 seconds. Time passed: 9 minutes, 44 seconds
+[INFO 12:19:43] my_main t_env: 170500 / 200000
+[INFO 12:19:43] my_main Estimated time left: 1 minutes, 49 seconds. Time passed: 10 minutes, 21 seconds
+[INFO 12:20:21] my_main t_env: 180500 / 200000
+[INFO 12:20:21] my_main Estimated time left: 1 minutes, 14 seconds. Time passed: 10 minutes, 59 seconds
+[INFO 12:21:00] my_main t_env: 190500 / 200000
+[INFO 12:21:00] my_main Estimated time left: 36 seconds. Time passed: 11 minutes, 38 seconds
+[INFO 12:21:35] my_main Recent Stats | t_env:     200000 | Episode:      400
+ep_length_mean:          500.0000	epsilon:                   0.0500	grad_norm:                 5.7761	loss:                      0.2857
+q_taken_mean:              0.2294	return_mean:               0.0100	return_std:                0.0436	target_mean:               0.2164
+td_error_abs:              0.2226	test_ep_length_mean:     500.0000	test_return_mean:          0.0000	test_return_std:           0.0000
+
+[INFO 12:21:37] my_main t_env: 200500 / 200000
+[INFO 12:21:37] my_main Estimated time left: -. Time passed: 12 minutes, 15 seconds
+[INFO 12:21:52] my_main Saving models to results/models/qmix_seed416273057_marl:r-tiny-2ag-v2_2025-01-24 12:09:20.222969/200500
+[INFO 12:21:52] my_main Finished Training
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 12:21:54] my_main Finished after 0:12:34.
+[INFO 12:21:54] pymarl Completed after 0:12:34
