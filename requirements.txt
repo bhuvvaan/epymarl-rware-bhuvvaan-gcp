@@ -1,3 +1,4 @@
+sacred
 absl-py
 attrs
 click
@@ -35,4 +36,3 @@ websocket-client
 whichcraft
 wrapt
 supersuit
-sacred
