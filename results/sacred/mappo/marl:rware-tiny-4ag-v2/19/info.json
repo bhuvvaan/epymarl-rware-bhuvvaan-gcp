@@ -1,0 +1,40 @@
+{
+  "agent_grad_norm": [
+    0.07170149683952332
+  ],
+  "agent_grad_norm_T": [
+    5000
+  ],
+  "ep_length_mean": [
+    500.0
+  ],
+  "ep_length_mean_T": [
+    5000
+  ],
+  "pg_loss": [
+    -0.026622017845511436
+  ],
+  "pg_loss_T": [
+    5000
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.1
+    }
+  ],
+  "return_mean_T": [
+    5000
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.30000000000000004
+    }
+  ],
+  "return_std_T": [
+    5000
+  ]
+}

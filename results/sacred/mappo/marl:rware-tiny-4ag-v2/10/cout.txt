@@ -1,0 +1,132 @@
+[INFO 16:25:58] pymarl Running command 'my_main'
+[INFO 16:25:58] pymarl Started run with ID "10"
+[DEBUG 16:25:58] pymarl Starting Heartbeat
+[DEBUG 16:25:58] my_main Started
+[INFO 16:25:58] my_main Experiment Parameters:
+[INFO 16:25:58] my_main 
+
+{   'action_selector': 'soft_policies',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'pi_logits',
+    'batch_size': 10,
+    'batch_size_run': 10,
+    'buffer_cpu_only': True,
+    'buffer_size': 10,
+    'checkpoint_path': '',
+    'common_reward': True,
+    'critic_type': 'cv_critic',
+    'entropy_coef': 0.001,
+    'env': 'gymma',
+    'env_args': {   'key': 'marl:rware-tiny-4ag-v2',
+                    'pretrained_wrapper': None,
+                    'seed': 266230253,
+                    'time_limit': 500},
+    'epochs': 4,
+    'eps_clip': 0.2,
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 128,
+    'hypergroup': None,
+    'label': 'default_label',
+    'learner': 'ppo_learner',
+    'learner_log_interval': 100000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 100000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mask_before_softmax': True,
+    'name': 'mappo',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'q_nstep': 10,
+    'render': False,
+    'repeat_id': 1,
+    'reward_scalarisation': 'sum',
+    'runner': 'parallel',
+    'runner_log_interval': 100000,
+    'save_model': True,
+    'save_model_interval': 50000,
+    'save_replay': False,
+    'seed': 266230253,
+    'standardise_returns': False,
+    'standardise_rewards': False,
+    't_max': 20000000,
+    'target_update_interval_or_tau': 0.01,
+    'test_greedy': True,
+    'test_interval': 100000,
+    'test_nepisode': 100,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_tensorboard': False,
+    'use_wandb': False,
+    'wandb_mode': 'offline',
+    'wandb_project': None,
+    'wandb_save_model': False,
+    'wandb_team': None}
+
+[INFO 16:25:58] my_main Beginning training for 20000000 timesteps
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+/home/bhuv/Documents/bhuv-diffusion/epymarl/epymarl_env/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:245: UserWarning: [33mWARN: The reward returned by `step()` must be a float, int, np.integer or np.floating, actual type: <class 'list'>[0m
+  logger.warn(
+[INFO 16:26:04] my_main t_env: 5000 / 20000000
+[INFO 16:26:04] my_main Estimated time left: 17 minutes, 28 seconds. Time passed: 5 seconds
+[INFO 16:26:29] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/5000
+[INFO 16:27:17] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/55000
+[INFO 16:28:01] my_main Recent Stats | t_env:     100000 | Episode:      200
+advantage_mean:            0.0349	agent_grad_norm:           0.0192	critic_grad_norm:          0.2106	critic_loss:               0.0036
+ep_length_mean:          500.0000	pg_loss:                  -0.0364	pi_max:                    0.2718	q_taken_mean:             -0.1134
+return_mean:               0.1000	return_std:                0.3000	target_mean:              -0.0785	td_error_abs:              0.0373
+test_ep_length_mean:     500.0000	test_return_mean:          0.2000	test_return_std:           0.4243	
+[INFO 16:28:05] my_main t_env: 105000 / 20000000
+[INFO 16:28:05] my_main Estimated time left: 6 hours, 43 minutes, 8 seconds. Time passed: 2 minutes, 7 seconds
+[INFO 16:28:32] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/105000
+[INFO 16:29:20] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/155000
+[INFO 16:30:04] my_main Recent Stats | t_env:     200000 | Episode:      400
+advantage_mean:            0.0149	agent_grad_norm:           0.0104	critic_grad_norm:          0.1157	critic_loss:               0.0099
+ep_length_mean:          500.0000	pg_loss:                  -0.0165	pi_max:                    0.2825	q_taken_mean:             -0.0764
+return_mean:               0.2025	return_std:                0.4424	target_mean:              -0.0616	td_error_abs:              0.0377
+test_ep_length_mean:     500.0000	test_return_mean:          0.2700	test_return_std:           0.4880	
+[INFO 16:30:09] my_main t_env: 205000 / 20000000
+[INFO 16:30:09] my_main Estimated time left: 6 hours, 47 minutes, 51 seconds. Time passed: 4 minutes, 10 seconds
+[INFO 16:30:34] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/205000
+[INFO 16:31:23] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/255000
+[INFO 16:32:06] my_main Recent Stats | t_env:     300000 | Episode:      600
+advantage_mean:            0.0086	agent_grad_norm:           0.0074	critic_grad_norm:          0.0851	critic_loss:               0.0079
+ep_length_mean:          500.0000	pg_loss:                  -0.0101	pi_max:                    0.3175	q_taken_mean:             -0.0564
+return_mean:               0.2267	return_std:                0.4647	target_mean:              -0.0479	td_error_abs:              0.0323
+test_ep_length_mean:     500.0000	test_return_mean:          0.3100	test_return_std:           0.5302	
+[INFO 16:32:11] my_main t_env: 305000 / 20000000
+[INFO 16:32:11] my_main Estimated time left: 6 hours, 41 minutes, 25 seconds. Time passed: 6 minutes, 13 seconds
+[INFO 16:32:37] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/305000
+[INFO 16:33:25] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/355000
+[INFO 16:34:09] my_main Recent Stats | t_env:     400000 | Episode:      800
+advantage_mean:            0.0070	agent_grad_norm:           0.0060	critic_grad_norm:          0.0667	critic_loss:               0.0068
+ep_length_mean:          500.0000	pg_loss:                  -0.0086	pi_max:                    0.3227	q_taken_mean:             -0.0459
+return_mean:               0.2438	return_std:                0.4779	target_mean:              -0.0389	td_error_abs:              0.0288
+test_ep_length_mean:     500.0000	test_return_mean:          0.2850	test_return_std:           0.4995	
+[INFO 16:34:13] my_main t_env: 405000 / 20000000
+[INFO 16:34:13] my_main Estimated time left: 6 hours, 38 minutes, 46 seconds. Time passed: 8 minutes, 15 seconds
+[INFO 16:34:39] my_main Saving models to results/models/mappo_seed266230253_marl:rware-tiny-4ag-v2_2025-01-28 16:25:58.180615/405000

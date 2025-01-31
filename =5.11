@@ -1,0 +1,8 @@
+Collecting PyYAML
+  Using cached PyYAML-6.0.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (746 kB)
+Installing collected packages: PyYAML
+  Attempting uninstall: PyYAML
+    Found existing installation: PyYAML 5.3.1
+    Uninstalling PyYAML-5.3.1:
+      Successfully uninstalled PyYAML-5.3.1
+Successfully installed PyYAML-6.0.2
