@@ -9,6 +9,24 @@ import networkx as nx
 import numpy as np
 
 
+
+
+#change here for a different layout
+
+layout_str = "..........x.....x.x...x...x...x.x.....x....g...g."
+width_of_layout = 7
+layout_id = "789"
+
+
+##############################
+
+
+
+
+
+
+
+
 _COLLISION_LAYERS = 2
 
 _LAYER_AGENTS = 0
@@ -1037,6 +1055,9 @@ class Warehouse(gym.Env):
                 )
         return self.global_image
 
+def parse_layout(layout_str, width):
+   """Convert a single string layout into a multi-line string."""
+   return '\n'.join([layout_str[i:i+width] for i in range(0, len(layout_str), width)])
 
 import itertools
 
@@ -1059,10 +1080,14 @@ _perms = itertools.product(
     range(1, 20),
 )
 
-for size, diff, agents in [("tiny","",4)]:
+
+layout = parse_layout(layout_str, width_of_layout)
+
+
+for size, diff, agents in [("small","",2)]:
     # normal tasks
     register(
-        id=f"rware-{size}-{agents}ag{diff}-v2",
+        id=f"rware-{size}-{agents}ag{diff}-v2-"+layout_id,
         entry_point="marl:Warehouse",
         kwargs={
             "column_height": 7,
@@ -1074,12 +1099,13 @@ for size, diff, agents in [("tiny","",4)]:
             "request_queue_size": int(agents * _difficulty[diff]),
             "max_inactivity_steps": None,
             "max_steps": 500,
-            "reward_type": RewardType.INDIVIDUAL
-
+            "reward_type": RewardType.INDIVIDUAL,
+            "layout": layout
         })
+
     
 if __name__ == "__main__":
-    env = gym.make("rware-tiny-4ag-v2", render_mode="human")
+    env = gym.make("rware-small-2ag-v2-"+layout_id, render_mode="human")
     print(env.observation_space)
     env.reset()
     from tqdm import tqdm

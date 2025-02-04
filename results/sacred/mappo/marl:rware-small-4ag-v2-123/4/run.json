@@ -1,0 +1,115 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/home/bhuv/Documents/bhuv-diffusion/epymarl/src",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==6.0.2",
+      "sacred==0.8.6",
+      "torch==2.4.1"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarl",
+    "repositories": [
+      {
+        "commit": "ec70f5deb26e078638fc896bd7cabadd1c6f8545",
+        "dirty": true,
+        "url": "https://github.com/bhuvvaan/epymarl-rware.git"
+      },
+      {
+        "commit": "ec70f5deb26e078638fc896bd7cabadd1c6f8545",
+        "dirty": true,
+        "url": "https://github.com/bhuvvaan/epymarl-rware.git"
+      },
+      {
+        "commit": "ec70f5deb26e078638fc896bd7cabadd1c6f8545",
+        "dirty": true,
+        "url": "https://github.com/bhuvvaan/epymarl-rware.git"
+      }
+    ],
+    "sources": [
+      [
+        "main.py",
+        "_sources/main_b2cc1db06d11795e4f8cf6a3b0165fa1.py"
+      ],
+      [
+        "run.py",
+        "_sources/run_29fd448eb2929a57e5fd2547c431175b.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_80685d67fab61f6e71e93fbe28085531.py"
+      ]
+    ]
+  },
+  "heartbeat": "2025-02-04T01:37:23.314437",
+  "host": {
+    "ENV": {},
+    "cpu": "AMD Ryzen 7 3700X 8-Core Processor",
+    "gpus": {
+      "driver_version": "535.216.03",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 2070 SUPER",
+          "persistence_mode": true,
+          "total_memory": 8192
+        }
+      ]
+    },
+    "hostname": "lorin-cairo",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-130-generic-x86_64-with-glibc2.29"
+    ],
+    "python_version": "3.8.10"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "common_reward": true,
+      "env_args": {
+        "key": "marl:rware-small-4ag-v2-123",
+        "time_limit": 500
+      },
+      "save_model": true
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.time_limit=500",
+        "env_args.key=marl:rware-small-4ag-v2-123",
+        "save_model=True",
+        "common_reward=True"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2025-02-04T01:35:36.697833",
+  "status": "INTERRUPTED",
+  "stop_time": "2025-02-04T01:37:23.315896"
+}

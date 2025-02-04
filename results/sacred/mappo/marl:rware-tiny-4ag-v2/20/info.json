@@ -1,0 +1,56 @@
+{
+  "advantage_mean": [
+    -0.03923348999023438
+  ],
+  "advantage_mean_T": [
+    5000
+  ],
+  "agent_grad_norm": [
+    0.018584933131933212
+  ],
+  "agent_grad_norm_T": [
+    5000
+  ],
+  "critic_grad_norm": [
+    0.245529904961586
+  ],
+  "critic_grad_norm_T": [
+    5000
+  ],
+  "critic_loss": [
+    0.006001555360853672
+  ],
+  "critic_loss_T": [
+    5000
+  ],
+  "pg_loss": [
+    0.037775203585624695
+  ],
+  "pg_loss_T": [
+    5000
+  ],
+  "pi_max": [
+    0.238539599609375
+  ],
+  "pi_max_T": [
+    5000
+  ],
+  "q_taken_mean": [
+    0.16494365234375
+  ],
+  "q_taken_mean_T": [
+    5000
+  ],
+  "target_mean": [
+    0.12571015625
+  ],
+  "target_mean_T": [
+    5000
+  ],
+  "td_error_abs": [
+    0.0488215576171875
+  ],
+  "td_error_abs_T": [
+    5000
+  ]
+}
