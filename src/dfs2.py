@@ -1,9 +1,9 @@
 import random
 
 # Define grid dimensions
-x_size = 8   # Number of rows
+x_size = 16   # Number of rows
 y_size = 10  # Number of columns
-num_black_tiles = 28  # Fixed number of black tiles
+num_black_tiles = 56  # Fixed number of black tiles
 
 def create_empty_grid(x_size, y_size):
     """Create an empty grid filled with white tiles ('.')."""
@@ -115,7 +115,8 @@ def correct_layout(num_black_tiles):
         #print("Re-validating and adjusting layout...")
 
 
-# Main program
-grid = correct_layout(num_black_tiles)
-print("Final Grid Layout:")
-print_grid(grid)  # Modify or remove w_rows as needed.
+if __name__ == "__main__":
+    # Main program
+    grid = correct_layout(num_black_tiles)
+    print("Final Grid Layout:")
+    print_grid(grid)  # Modify or remove w_rows as needed.

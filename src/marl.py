@@ -13,9 +13,9 @@ import numpy as np
 
 #change here for a different layout
 
-layout_str = "..........x.....x.x...x...x...x.x.....x....g...g."
-width_of_layout = 7
-layout_id = "789"
+layout_str = "...xx...xx.xxx.........xx....x....xxx....xx...xx.x.....x...x..xx......x.xx..xxx...............gg...."
+width_of_layout = 10
+layout_id = "1"
 
 
 ##############################
@@ -1084,7 +1084,7 @@ _perms = itertools.product(
 layout = parse_layout(layout_str, width_of_layout)
 
 
-for size, diff, agents in [("small","",2)]:
+for size, diff, agents in [("tiny","",4)]:
     # normal tasks
     register(
         id=f"rware-{size}-{agents}ag{diff}-v2-"+layout_id,
@@ -1105,7 +1105,7 @@ for size, diff, agents in [("small","",2)]:
 
     
 if __name__ == "__main__":
-    env = gym.make("rware-small-2ag-v2-"+layout_id, render_mode="human")
+    env = gym.make("rware-tiny-4ag-v2-"+layout_id, render_mode="human")
     print(env.observation_space)
     env.reset()
     from tqdm import tqdm
