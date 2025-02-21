@@ -5,32 +5,20 @@ PYTHON_FILE="src/marl.py"
 
 # New layout strings and IDs for each iteration
 LAYOUT_STR_VALUES=(
-".xx...x.xxx.x.x.........xxx.xx.x.x.x....x..x.....x......xxx...........xx.x.x..xx..............gg...."
-"xxx..xxx....x.....x..xx.x...x.....x.x....x....xx.x...x.x.x.xx.......x.x.xx.x..................gg...."
-"..x.xx.x.xx.x..x....x...x...x............xxxxxxx.......x.x.x...x...x.xx....x.x.x..............gg...."
-"x.x.x.....x...xxx....xx.....x..x..x.xxxx.xx..x...........x.xx.x.x.x...x.x......x..............gg...."
-".....x.x..x.xx.x....xxx...xxx.....xx....x.x....x.xxx......x...xx.xxx..x........x..............gg...."
-".xx...xxx..x....x.x.............xx.xx..x..xx.x.....x..xx.xx.......xx...x.xx...xx..............gg...."
-"..x...x...x.x.x..x.x...x.x.x..x.xxx....x..x...x.x.x...x..x....x.xx....xx....xx................gg...."
-".x...xxxx....x........x.....xxxxxx.xx.xx...........xxx...xx....xx..x..x.....xx................gg...."
-"x......xx.x.x...........x..x..x.xxx.x.xxx.xx......x..x....x..x....x......xx.xxxx..............gg...."
-".xx.xx......x..x..xxx.x..xx..xx...x.....x...xx....xx..xx.xx.......xx....x.x...................gg...."
-"xx...x..x....xxxx......x..x......x..xxx..x.x..x...xx...x.......x.x.xx..x.x...xx...............gg...."
-"xx..x..x....x.....x......xxx.x.xx..x....x....x.x..x....x.x..........x.xxxxxxx.x...............gg...."
-".........x..x.xxxx.x.xx.x.xx..x.x...........xxxxx...xx...x..x.....x.....x...x.xx..............gg...."
-".xxxx.x..........x.xx..xx............xx.....x.xx...x.x..xxx.x..x.xx......x.x..xx..............gg...."
-"...xxx.xx..x..........xx.x..xx..x.xx.xx..x..x..x.....xx.x.x.x.x.....x....x..x.................gg...."
-".x..............x....x.xx...xxxx.xx....x.....x.x..x.xx.x...xx..xxxxx.xx......x................gg...."
-".xxxxx.xx...............x.xx.xxx.xx..x........x.x.xxx.x..xx.....x.x.x.x.......................gg...."
-"...xxxxx...xx......x....x......x..x.xxx...xx.xxx..x...x..x.x.....x.xxx...x....................gg...."
-"x...x....x..x.xx.x...x.xx...x......x...xxx.xxxx...x...x....xx...........x..xxxx...............gg...."
-"x...xx...x..x...x..xx.xxxxx.......x.x..x......x..x.xxx..x...x.x.x....x......x..x..............gg...."
+"x.x..x.x.x..x......x..xx...x.x......xx..xx....x...x..x.x..x.x.xx..x.x......x..xx..............gg...."
+"x..xx.x.x..x.x............x..xxx..xx.x..x.x.x....x.....xxx.......xx..xxx.x.....x..............gg...."
+"...x.xx...xx....x.xx.xxx.x...x.......x..........x..xxx.x..xx.........xx..x.xxx.x..............gg...."
+"..x...xx.xx...xx...xx...x..xxx............xx.x..x.x..x.x..x...x...x...xxx....x.x..............gg...."
+"x...x....x....x....x.x.x...xx.xx....xx..x.x.......x...x.xxx...xxx.....x....xx.xx..............gg...."
+"xxx.........x.xxx.x....xxxx...x.xx...xx......x.....x.x.x...x.xxx....xxx.......................gg...."
+"x..xxxxx..x......x.....xx...x..x...x..x..xxxx.x.......x.x.x..x.xx.....x.....x..x..............gg...."
+".xxx.....x...x.x...x..x.xx.x...x...x..x....xxx...x..xx.x.x..x.......xx.xx..x..................gg...."
 )
 
-LAYOUT_ID_VALUES=("71" "72" "73" "74" "75" "76" "77" "78" "79" "80" "81" "82" "83" "84" "85" "86" "87" "88" "89" "90")
+LAYOUT_ID_VALUES=("91" "92" "93" "94" "95" "96" "97" "98")
 
 # Loop 20 times
-for i in {0..19}
+for i in {0..7}
 do
     echo "Iteration $i"
 
